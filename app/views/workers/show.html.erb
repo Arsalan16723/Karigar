@@ -1,0 +1,38 @@
+<div class="container">
+	<h2 align="center"><%= @worker.name %></h2><br>
+<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+	<div class="table-responsive">
+		<table class="table table-striped .table-hover">
+			<tbody>
+				<tr>
+					<td>Name:</td>
+					<td><%= @worker.name %></td>
+				</tr>
+				<tr>
+					<td>CNIC:</td>
+					<td><%= @worker.cnic %></td>
+				</tr>
+				<tr class="success">
+					<td>Phone:</td>
+					<td><%= @worker.phone %></td>
+				</tr>
+				<tr>
+					<td>Category:</td>
+					<td><%= @worker.category.name %></td>
+				</tr>
+				<tr>
+					<td>City:</td>
+					<td><%= @worker.city %></td>
+				</tr>
+				<tr>
+					<td>Address:</td>
+					<td><%= @worker.address %></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	</div>	
+</div>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+<div class="well"><h2 align="center"><%= @category.name %></h2><p class="text-center">All <%= @category.name%>s</p></div>
+	<% @workers.each_slice(4) do |worker| %>
+		<div class="row">
+			<% worker.each do |worker| %>
+				<div class="col-md-3 col-sm-3">
+					<div class="well">
+						<h3 align="center"><%= worker.name %></h3>
+						<p align="center">Phone :<%= worker.phone %></p><br>
+						<p align = "center"><%= link_to 'View', worker_path(worker), class: 'btn btn-primary' %></p>
+					</div>
+				</div>
+			<% end %>
+		</div>
+	<% end %>
+</div>

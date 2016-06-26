@@ -1,0 +1,13 @@
+
+<div class="container">	
+	<div class="jumbotron"><h3 align="center">All Workers</h3></div>
+	<div class="row">
+		<% @workers.each do |worker| %>
+				<div class="col-sm-4">
+					<div class="well well-lg">
+							<h4 align="center"><%= link_to worker.name, worker_path(worker) %></h4>
+					</div>
+				</div>
+		<% end %>
+	</div>
+</div>
